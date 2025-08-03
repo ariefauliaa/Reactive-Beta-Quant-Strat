@@ -14,6 +14,8 @@ No fundamentals enter the equation. That means no earnings reports, no financial
 
 This is **not a stock picker’s strategy**, we trust the system. If a company is a zombie with negative equity but meets the quantitative criteria, it gets included. No human override at all.
 
+We use basic risk management, 10% stop-loss. The logic spans two dates: current date (x) and next date (x+1). If a stock is flagged on x for entry on x+1, we model the buy price as x close + x+1 open. If that’s 100 and next date low price hits below 90, we close the trade on 90.
+
 ---
 
 ### 🔧 Setup
