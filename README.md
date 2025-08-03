@@ -55,29 +55,29 @@ This ensures **heavier exposure to the highest beta & most liquid names**, and p
 
 (📷 *Backtest chart here*)
 
-| Metric                    | Value              |
-|---------------------------|--------------------|
-| **Period**       | 2010-08-01 to 2025-08-01 |
-| **Initial Capital**       | Rp1,000,000         |
-| **Final Balance**         | RpXX,XXX,XXX        |
-| **Total Return**          | XX,XXX%             |
-| **Annualized Return**     | XX.XX%              |
-| **Annualized Volatility** | XX.XX%              |
-| **Sharpe Ratio**          | X.XX                |
-| **Max Drawdown**          | -XX.XX%             |
-| **Benchmark**             | Jakarta Composite Index (JCI) |
-| **Annualized Alpha**      | ~12.47%             |
-
-> 📌 *Alpha is calculated against JCI over a 5-year backtest.*
+**Results** 
+| Metric                    | Value            |
+|---------------------------|------------------|
+| **Period**                | 2010-01-01 to 2025-08-01 |
+| **Initial Balance**       | Rp1,000,000       |
+| **Final Balance**         | Rp697,941,450     |
+| **Total Return**          | 66,371.49%        |
+| **Annualized Return**     | 54.23%            |
+| **Annualized Volatility** | 46.58%            |
+| **Sharpe Ratio**          | 1.16              |
+| **Max Drawdown**          | -27.25%           |
+|                           |                  |
+| **Benchmark Return**      | 144.59%         |
+| **Benchmark Max Drawdown**| -31.29%           |
+| **Total Alpha**           | 66,226.89%        |
+| **Annualized Alpha**      | 54.21%            |
 
 ---
 
 ### 🔍 Strategic Observations
 
-- The **long-only beta tilt** works surprisingly well in a market where shorting isn't fully enabled.
-- Even though this is a one-legged strategy (no hedging), it **consistently outperformed the index**.
-- There's anecdotal alignment with **certain EM index movements**, possibly reflecting similar structural exposures.
-- The **beta premium** seems alive and well in IDX — at least for liquid names.
+- The **long-only reactive beta** works surprisingly well in a market where shorting isn't fully enabled.
+- Even though this is a one legged strategy (no hedging), it **consistently outperformed the index**.
 
 ---
 
@@ -91,7 +91,7 @@ This ensures **heavier exposure to the highest beta & most liquid names**, and p
 
 ### 🎯 Objective
 
-To test whether **a simplified version of a hedge fund beta-tilt strategy** can still deliver alpha in a restricted market environment like Indonesia, using only long positions.
+To test whether **a simplified version of a RenTech beta-tilt strategy** can still deliver alpha in a restricted market environment like Indonesia, using only long positions.
 
 ---
 
@@ -100,10 +100,4 @@ The full Jupyter notebook with all code, functions, and chart outputs is current
 For access or discussion, feel free to reach out via email.  
 📧 [ariefauliaa@gmail.com]
 """
-
-# Save to a file
-readme_path = Path("/mnt/data/README.md")
-readme_path.write_text(readme_content.strip())
-
-readme_path
 
