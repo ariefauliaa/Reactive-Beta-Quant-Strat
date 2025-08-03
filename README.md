@@ -1,18 +1,18 @@
-# 📈 Long High Beta Strategy – IDX Quant Backtest
+# 📈 Long Reactive Beta Strategy – IDX Quant Backtest
 
-This project explores a long-only quantitative equity strategy inspired by the rumored **"Long High Beta, Short Low Beta"** setup speculated to be part of **RenTech** multifactor framework.
+This project explores long only quantitative equity strategy inspired by the rumored **"Long Reactive Beta, Short Low Beta"** setup speculated to be part of **RenTech** multifactor framework.
 
-Since **shorting isn't fully available** in the Indonesian equity market, this model focuses purely on **long exposure to high beta stocks**, aiming to assess if the strategy holds water on its own without the short leg.
+Now, here in Indonesia, since short selling isn't fully available yet, we decided to test the strategy from just the long side, basically going Long on Reactive Beta stocks only, to see if it's still promising.
 
 ---
 
 ### 🧠 Strategy Concept
 
-The strategy selectively goes **long on high beta stocks**, operating under the assumption that stocks with higher sensitivity to market moves may offer **enhanced upside in risk on regimes**.
+The strategy selectively goes **long on reactive beta stocks**, operating under the assumption that stocks with higher sensitivity to market moves may offer **enhanced upside in risk on regimes**.
 
-We don’t touch fundamentals; no earnings and no balance sheet filters. The model is strictly **market behavior driven**, relying only on liquidity and beta.
+No fundamentals enter the equation. That means no earnings reports, no financials, no projections, no margins, no ROI, nothing from statements. Our model is purely behavioral, operating on liquidity and beta alone.
 
-This is **not a stock picker’s strategy**, we trust the system. If a company is a zombie with negative equity but meets the quantitative criteria, it gets included. No human override.
+This is **not a stock picker’s strategy**, we trust the system. If a company is a zombie with negative equity but meets the quantitative criteria, it gets included. No human override at all.
 
 ---
 
@@ -47,7 +47,7 @@ When a basket of stocks is selected, weights are distributed **gradually and lin
 | 10   | 1.82%      |
 | **Total** | **100%** |
 
-This ensures **heavier exposure to the highest beta & most liquid names**, and progressively less to lower ranked selections.
+This ensures **heavier exposure to the highest reactive beta & most liquid names**, and progressively less to lower ranked selections.
 
 ---
 
@@ -96,8 +96,7 @@ To test whether **a simplified version of a RenTech beta-tilt strategy** can sti
 ---
 
 📁 **Note:**  
-The full Jupyter notebook with all code, functions, and chart outputs is currently **private**.  
-For access or discussion, feel free to reach out via email.  
+The Jupyter notebook containing the full backtest is private.  
+Feel free to reach out via email for access.  
 📧 [ariefauliaa@gmail.com]
 """
-
