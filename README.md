@@ -133,14 +133,6 @@ Then the room master offers: *"Want another round? 1 more door? 5? 50?"*
 
 ---
 
-### 🛠️ Realism Adjustments
-
-- **Slippage accounted for** via average execution between week-close and next-week open  
-- **No survivorship bias** — delisted names remain in the universe if they had sufficient liquidity  
-- **No manual screening** — model output is respected regardless of business fundamentals  
-
----
-
 ### 🎯 Objective
 
 To test whether **a simplified version of a RenTech beta-tilt strategy** can still deliver alpha in a restricted market environment like Indonesia, using only long positions.
