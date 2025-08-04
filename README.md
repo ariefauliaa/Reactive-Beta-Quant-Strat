@@ -10,23 +10,23 @@ Now, here in Indonesia, since short selling isn't fully available yet, we decide
 
 ### 🧠 Strategy Concept
 
-1. Strategy takes top n stocks ranked by a 50/50 weighted score: reactive beta (50%) and value traded (50%). The core assumption is market movements are stationary: high-beta stocks this week likely remain high-beta next week. Stocks don’t abruptly lose momentum; decay is gradual.
+- Strategy takes top n stocks ranked by a 50/50 weighted score: reactive beta (50%) and value traded (50%). The core assumption is market movements are stationary: high-beta stocks this week likely remain high-beta next week. Stocks don’t abruptly lose momentum; decay is gradual.
 
-2. Fundamentals are irrelevant. No earnings, no ROE, no balance sheets. We ask only two questions:
+- Fundamentals are irrelevant. No earnings, no ROE, no balance sheets. We ask only two questions:
 
-- ***Easy to buy?***
+1. ***Easy to buy?***
 
-- ***Exit-able post-purchase?***
+2. ***Easy to sell?***
 
 If the answer is yes to both, and the stock meets the beta threshold, we buy it. Even if it has negative equity or other red flags, we still buy it. For example, if tickers A, B, and C qualify, and C has negative equity, we still buy A, B, and C.
 
-3. Use a simple stop loss rule: 10% below the entry price. Let’s say today is day x, and ticker is flagged for entry on day x+1. If we enter at 100 IDR, and next day’s low hits 90 or below, we exit at 90.
+- Use a simple stop loss rule: 10% below the entry price. Let’s say today is day x, and ticker is flagged for entry on day x+1. If we enter at 100 IDR, and next day’s low hits 90 or below, we exit at 90.
 
-4. **No hyperparameter tuning. We don't game backtests.** Adjustments are minimal, focused only on:
+- **No hyperparameter tuning. We don't game backtests.** Adjustments are minimal, focused only on:
 
-- Interval granularity (daily / weekly / monthly / quarterly)
+1. Interval granularity (daily / weekly / monthly / quarterly)
 
-- Turnover thresholds (to ensure tradeability)
+2. Turnover thresholds (to ensure tradeability)
 
 These tweaks are practical, not optimized for historical performance. It’s about making the strategy scalable, especially if used by larger capital pools. A small-cap fund might not face slippage, but a big fund will. The longer the interval, the more time to accumulate or exit.
 
