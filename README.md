@@ -106,7 +106,7 @@ The simulation paints a very optimistic picture. Over a 3-year horizon:
 
 - You have a **94.8% probability** of finishing with a **positive return**.
 - The **average return** is **358.22%**, implying a **CAGR of ~65.4%**, which is extraordinarily aggressive.
-- Even in the bottom 5% of outcomes, the loss is negligible at just **-0.31%**, while the top 5% result exceeds **1000%** — suggesting significant upside potential.
+- Even in the bottom 5% of outcomes, the loss is negligible at just **-0.31%**, while the top 5% result exceeds **1000%**, suggesting significant upside potential.
 
 **Metaphorical Visualization**
 
