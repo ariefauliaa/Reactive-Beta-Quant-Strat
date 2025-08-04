@@ -2,6 +2,8 @@
 
 This project explores long only quantitative equity strategy inspired by the rumored **"Long Reactive Beta, Short Low Beta"** setup speculated to be part of **RenTech** multifactor framework.
 
+We’ve observed that one of the EM country indices may be quietly applying a similar methodology. It’s not publicly confirmed, but the structure and character of that index seem to mimic this approach too closely to ignore.
+
 Now, here in Indonesia, since short selling isn't fully available yet, we decided to test the strategy from just the long side, basically going Long on Reactive Beta stocks only, to see if it's still promising.
 
 ---
@@ -22,15 +24,12 @@ We use basic risk management, 10% stop-loss. The logic spans two dates: current 
 
 ### 🔧 Setup
 - **Market**:  Jakarta Composite Index (JCI) 
-- **Universe Filter**:  
+- **Filter**:  
   - Median turnover > IDR 10B (last 1800 daily bars)  
   - Tradable stocks with continuous price data  
 - **Beta Calculation**: Rolling beta to JCI (Jakarta Composite Index), using specific windows  
 - **Weighting Scheme**: Linear decayed weight by beta score (50%) + liquidity adjustment (50%)  
-- **Tools**: Python / Jupyter Notebook  
 - **Data Source**: Bloomberg Finance LP, Arief Aulia Rakhman  
-- **Execution Assumption**: Average of this week’s close and next week’s open (to account for slippage)
-
 ---
 
 ### 📊 Portfolio Construction Logic
