@@ -1,4 +1,4 @@
-# 📈 Long Reactive Beta Strategy – IDX Quant Backtest
+# 📈 📦 Long Reactive Beta - Quantitative Strategy
 
 This project explores long only quantitative equity strategy inspired by the rumored **"Long Reactive Beta, Short Low Beta"** setup speculated to be part of **RenTech** multifactor framework.
 
