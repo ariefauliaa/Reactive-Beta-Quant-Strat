@@ -10,23 +10,31 @@ Now, here in Indonesia, since short selling isn't fully available yet, we decide
 
 ### 🧠 Strategy Concept
 
-The strategy selectively goes **long on reactive beta stocks**, operating under the assumption that stocks with higher sensitivity to market moves may offer **enhanced upside in risk on regimes**.
+1. Strategy takes top n stocks ranked by a 50/50 weighted score: reactive beta (50%) and value traded (50%). The core assumption is market movements are stationary: high-beta stocks this week likely remain high-beta next week. Stocks don’t abruptly lose momentum; decay is gradual.
 
-No fundamentals enter the equation. That means no earnings reports, no financials, no projections, no margins, no ROI, nothing from statements. Our model is purely behavioral, operating on liquidity and beta alone.
+2. Fundamentals are irrelevant. No earnings, no ROE, no balance sheets. We ask only two questions:
 
-This is **not a stock picker’s strategy**, we trust the system. If a company is a zombie with negative equity but meets the quantitative criteria, it gets included. No human override at all.
+***Easy to buy?***
 
-We use basic risk management, 10% stop-loss. The logic spans two dates: current date (x) and next date (x+1). If a stock is flagged on x for entry on x+1, we model the buy price as x close + x+1 open. If that’s 100 and next date low price hits below 90, we close the trade on 90.
+***Exit-able post-purchase?***
 
-**No hyperparameter games. No tuning for backtest glory. We’re here to validate one idea: Is beta reactivity a reliable upside signal during bullish phases?**
+If the answer is yes to both, and the stock meets the beta threshold, we buy it. Even if it has negative equity or other red flags, we still buy it. For example, if tickers A, B, and C qualify, and C has negative equity, we still buy A, B, and C.
+
+3. Use a simple stop loss rule: 10% below the entry price. Let’s say today is day x, and ticker is flagged for entry on day x+1. If we enter at 100 IDR, and next day’s low hits 90 or below, we exit at 90.
+
+4. **No hyperparameter tuning. We don't game backtests.** Adjustments are minimal, focused only on:
+
+- Interval granularity (daily / weekly / monthly / quarterly)
+
+- Turnover thresholds (to ensure tradeability)
+
+These tweaks are practical, not optimized for historical performance. It’s about making the strategy scalable, especially if used by larger capital pools. A small-cap fund might not face slippage, but a big fund will. The longer the interval, the more time to accumulate or exit.
 
 ---
 
 ### 🔧 Setup
 - **Market**:  Jakarta Composite Index (JCI) 
-- **Filter**:  
-  - Median turnover > IDR 10B (last 1800 daily bars)  
-  - Tradable stocks with continuous price data  
+- **Filter**:  Median turnover & tradable stocks with continuous price data  
 - **Beta Calculation**: Rolling beta to JCI (Jakarta Composite Index), using specific windows  
 - **Weighting Scheme**: Linear decayed weight by beta score (50%) + liquidity adjustment (50%)  
 - **Data Source**: Bloomberg Finance LP, Arief Aulia Rakhman  
