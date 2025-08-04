@@ -110,8 +110,25 @@ The simulation paints a very optimistic picture. Over a 3-year horizon:
 
 To visualize it metaphorically:
 
-> Imagine flipping a coin where **it lands in your favor 95 out of 100 times**. That’s what this strategy's forward outlook looks like — skewed heavily toward success.
-"""
+You face 100 doors. 95 hide treasure; 5 hold nothing.
+
+Rule 1: Open as many as you can. Expected value = 95% success.
+
+Then the room master offers: "Want another round? 1 more door? 5? 50?"
+
+Answer: Always yes.
+
+1 extra door: 95% → 95.05% EV (100 → 101 doors).
+
+50 extra doors: 95% → 95.45% EV (100 → 150 doors).
+
+Why?
+
+The base rate (95%) dominates. More trials = convergence to true odds.
+
+Even with diminishing returns (e.g., 95/100 → 142/150), the marginal gain is always positive.
+
+**The only mistake is stopping.**
 
 ---
 
