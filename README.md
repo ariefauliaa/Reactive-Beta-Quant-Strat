@@ -108,27 +108,24 @@ The simulation paints a very optimistic picture. Over a 3-year horizon:
 - The **average return** is **358.22%**, implying a **CAGR of ~65.4%**, which is extraordinarily aggressive.
 - Even in the bottom 5% of outcomes, the loss is negligible at just **-0.31%**, while the top 5% result exceeds **1000%** — suggesting significant upside potential.
 
-To visualize it metaphorically:
+---
 
-You face 100 doors. 95 hide treasure; 5 hold nothing.
+### **Metaphorical Visualization**  
+You face 100 doors. 95 hide treasure; 5 hold nothing.  
 
-Rule 1: Open as many as you can. Expected value = 95% success.
+**Rule 1:** Open as many as you can. Expected value = 95% success.  
 
-Then the room master offers: "Want another round? 1 more door? 5? 50?"
+Then the room master offers: *"Want another round? 1 more door? 5? 50?"*  
 
-Answer: Always yes.
+**Answer:** Always yes.  
+- *1 extra door*: 95% → 95.05% EV (100 → 101 doors).  
+- *50 extra doors*: 95% → 95.45% EV (100 → 150 doors).  
 
-1 extra door: 95% → 95.05% EV (100 → 101 doors).
+**Why?**  
+- The base rate (95%) dominates. More trials = convergence to true odds.  
+- Even with diminishing returns (e.g., 95/100 → 142/150), the marginal gain is *always positive*.  
 
-50 extra doors: 95% → 95.45% EV (100 → 150 doors).
-
-Why?
-
-The base rate (95%) dominates. More trials = convergence to true odds.
-
-Even with diminishing returns (e.g., 95/100 → 142/150), the marginal gain is always positive.
-
-**The only mistake is stopping.**
+**Corollary:** The only mistake is stopping.
 
 ---
 
