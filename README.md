@@ -16,6 +16,8 @@ This is **not a stock picker’s strategy**, we trust the system. If a company i
 
 We use basic risk management, 10% stop-loss. The logic spans two dates: current date (x) and next date (x+1). If a stock is flagged on x for entry on x+1, we model the buy price as x close + x+1 open. If that’s 100 and next date low price hits below 90, we close the trade on 90.
 
+There is **no excessive hyperparameter tuning**. We intentionally avoid curve fitting by keeping the model simple and interpretable. We’re not chasing the best performance metrics, we’re testing a hypothesis. Does a clean, reactive beta signal consistently point to asymmetric upside during risk-on phases? That’s the real question.
+
 ---
 
 ### 🔧 Setup
