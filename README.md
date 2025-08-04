@@ -86,8 +86,6 @@ We conducted a **Monte Carlo simulation** to forecast performance over the **nex
 **Parameters**  
 | Parameter                         | Value         |
 |----------------------------------|---------------|
-| Historical mean monthly return   | 4.3721%       |
-| Historical monthly volatility    | 13.4502%      |
 | Simulation periods               | 36 months     |
 | Number of simulations            | 500           |
 
