@@ -14,9 +14,9 @@ Now, here in Indonesia, since short selling isn't fully available yet, we decide
 
 2. Fundamentals are irrelevant. No earnings, no ROE, no balance sheets. We ask only two questions:
 
-***Easy to buy?***
+- ***Easy to buy?***
 
-***Exit-able post-purchase?***
+- ***Exit-able post-purchase?***
 
 If the answer is yes to both, and the stock meets the beta threshold, we buy it. Even if it has negative equity or other red flags, we still buy it. For example, if tickers A, B, and C qualify, and C has negative equity, we still buy A, B, and C.
 
