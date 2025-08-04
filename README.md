@@ -56,24 +56,62 @@ This ensures **heavier exposure to the highest reactive beta & most liquid names
 
 ### 📈 Backtest Performance Summary
 
-(📷 *Backtest chart here*)
+![Backtest Preview](Backtest%20-%20Preview.png)
 
 **Results** 
 | Metric                    | Value            |
 |---------------------------|------------------|
 | **Period**                | 2010-01-01 to 2025-08-01 |
-| **Initial Balance**       | Rp1,000,000       |
-| **Final Balance**         | Rp697,941,450     |
-| **Total Return**          | 66,371.49%        |
-| **Annualized Return**     | 54.23%            |
-| **Annualized Volatility** | 46.58%            |
+| **Initial Balance**       | Rp1      |
+| **Final Balance**         | Rp679    |
+| **Total Return**          | 64,534.34%        |
+| **Annualized Return**     | 53.94%            |
+| **Annualized Volatility** | 46.59%            |
 | **Sharpe Ratio**          | 1.16              |
 | **Max Drawdown**          | -27.25%           |
 |                           |                  |
-| **Benchmark Return**      | 144.59%         |
+| **Benchmark Return**      | 142.36%         |
 | **Benchmark Max Drawdown**| -31.29%           |
-| **Total Alpha**           | 66,226.89%        |
-| **Annualized Alpha**      | 54.21%            |
+| **Total Alpha**           | 64,391.98%        |
+| **Annualized Alpha**      | 53.92%            |
+
+---
+
+### 🔮 Stress Test - Monte Carlo Simulation
+
+![Monte Carlo Preview](Monte%20Carlo%20-%20Preview.png)
+
+We conducted a **Monte Carlo simulation** to forecast performance over the **next 3 years (36 months)** using historical monthly returns and volatility as inputs. This provides a probabilistic view of potential future outcomes for the strategy.
+
+**Parameters**  
+| Parameter                         | Value         |
+|----------------------------------|---------------|
+| Historical mean monthly return   | 4.3721%       |
+| Historical monthly volatility    | 13.4502%      |
+| Simulation periods               | 36 months     |
+| Number of simulations            | 500           |
+
+**Results**  
+| Metric                            | Value         |
+|----------------------------------|---------------|
+| Mean final cumulative return     | 358.22%       |
+| Median final cumulative return   | 250.73%       |
+| Top 5% outcome                   | 1006.95%      |
+| Bottom 5% outcome                | -0.31%        |
+| Probability of positive return   | 94.8%         |
+
+**Monte Carlo Interpretation:**
+
+The simulation paints a very optimistic picture. Over a 3-year horizon:
+
+- You have a **94.8% probability** of finishing with a **positive return**.
+- The **average return** is **358.22%**, implying a **CAGR of ~65.4%**, which is extraordinarily aggressive.
+- Even in the bottom 5% of outcomes, the loss is negligible at just **-0.31%**, while the top 5% result exceeds **1000%** — suggesting significant upside potential.
+
+To visualize it metaphorically:
+
+> Imagine flipping a coin where **it lands in your favor 95 out of 100 times**. That’s what this strategy's forward outlook looks like — skewed heavily toward success.
+"""
 
 ---
 
