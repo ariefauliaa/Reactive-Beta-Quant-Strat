@@ -149,4 +149,3 @@ To test whether **a simplified version of a RenTech beta-tilt strategy** can sti
 The Jupyter notebook containing the full backtest is private.  
 Feel free to reach out via email for access.  
 📧 [ariefauliaa@gmail.com]
-"""
