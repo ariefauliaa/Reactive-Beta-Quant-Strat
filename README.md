@@ -128,7 +128,7 @@ Then the room master offers: *"Want another round? 1 more door? 5? 50?"*
 
 **Why?**  
 - The base rate (95%) dominates. More trials = convergence to true odds.  
-- Even with diminishing returns (e.g., 95/100 → 142/150), the marginal gain is *always positive*.  
+- Even with diminishing returns (95/100 → 142/150), the marginal gain is *always positive*.  
 
 ---
 
