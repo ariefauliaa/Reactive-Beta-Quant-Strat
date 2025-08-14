@@ -4,13 +4,13 @@ This project explores long only quantitative equity strategy inspired by the rum
 
 Now, here in Indonesia, since short selling isn't fully available yet, we decided to test the strategy from just the long side, basically going Long on Reactive Beta stocks only, to see if it's still promising.
 
-We’ve been closely studying several EM country sub indices and their rebalancing methodologies. Interestingly, some seem to mimic a similar approach, even if not explicitly stated. Since this setup appears effective in other emerging markets, we’re testing it on Indonesian stocks, hence this repo!
+Also, we’ve been closely studying several EM country sub indices and their rebalancing methodologies. Interestingly, some seem to mimic a similar approach, even if not explicitly stated. Since this setup appears effective in other emerging markets, we’re testing it on Indonesian stocks, hence this repo!
 
 ---
 
 ### 🧠 Strategy Concept
 
-- Strategy takes top n stocks ranked by a 50/50 weighted score: reactive beta (50%) and value traded (50%). The core assumption is market movements are stationary: high-beta stocks this week likely remain high-beta next week. Stocks don’t abruptly lose momentum; decay is gradual.
+- Strategy takes top n stocks ranked by a 50/50 weighted score: reactive beta (50%) and value traded (50%). The core assumption is market movements are stationary: high-beta stocks this week/month/quarter likely remain high-beta next week/month/quarter. Stocks don’t abruptly lose momentum; decay is gradual.
 
 - No earnings growth, no ROE, no balance sheets. We ask only two questions:
 
