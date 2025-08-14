@@ -105,7 +105,7 @@ Note: The live and backtest curves won’t perfectly match. The backtest chart i
 
 ![Monte Carlo Preview](Monte%20Carlo%20-%20Preview.png)
 
-We conducted a **Monte Carlo simulation** to forecast performance over the **next 3 years (36 months)** using historical monthly returns and volatility as inputs. This provides a probabilistic view of potential future outcomes for the strategy.
+We conducted **Monte Carlo simulation** to forecast performance over the **next 3 years (36 months)** using historical monthly returns and volatility as inputs. This provides a probabilistic view of potential future outcomes for the strategy.
 
 **Parameters**  
 | Parameter                         | Value         |
