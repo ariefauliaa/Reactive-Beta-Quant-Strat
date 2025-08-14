@@ -2,9 +2,9 @@
 
 This project explores long only quantitative equity strategy inspired by the rumored **"Long Reactive Beta, Short Low Beta"** setup speculated to be part of **RenTech** multifactor framework.
 
-We’ve observed that one of the EM country indices may be quietly applying a similar methodology. It’s not publicly confirmed, but the structure and character of that index seem to mimic this approach too closely to ignore.
-
 Now, here in Indonesia, since short selling isn't fully available yet, we decided to test the strategy from just the long side, basically going Long on Reactive Beta stocks only, to see if it's still promising.
+
+We’ve been closely studying several EM country sub indices and their rebalancing methodologies. Interestingly, some seem to mimic a similar approach, even if not explicitly stated. Since this setup appears effective in other emerging markets, we’re testing it on Indonesian stocks, hence this repo!
 
 ---
 
@@ -12,7 +12,7 @@ Now, here in Indonesia, since short selling isn't fully available yet, we decide
 
 - Strategy takes top n stocks ranked by a 50/50 weighted score: reactive beta (50%) and value traded (50%). The core assumption is market movements are stationary: high-beta stocks this week likely remain high-beta next week. Stocks don’t abruptly lose momentum; decay is gradual.
 
-- Fundamentals are irrelevant. No earnings, no ROE, no balance sheets. We ask only two questions:
+- No earnings growth, no ROE, no balance sheets. We ask only two questions:
 
 1. ***Easy to buy?***
 
@@ -114,7 +114,7 @@ The simulation paints a very optimistic picture. Over a 3-year horizon:
 - The **average return** is **358.22%**, implying **CAGR of ~65.4%**, which is extraordinarily aggressive.
 - Even in the bottom 5% of outcomes, the loss is negligible at just **-0.31%**, while the top 5% result exceeds **1000%**, suggesting significant upside potential.
 
-**Metaphorical Visualization**
+**Monte Carlo: Metaphorical Visualization**
 
 You face 100 doors. 95 hide treasure; 5 hold nothing.  
 
