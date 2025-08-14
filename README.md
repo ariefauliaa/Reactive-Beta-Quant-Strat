@@ -95,7 +95,7 @@ The live results were remarkable: over 16 live data points, the strategy deliver
 
 ![Live Result Preview](Live%20Result%20-%20Preview.png)
 
-Left chart → live overall performance, right chart → current live holdings performance
+Left chart → live overall performance, right table → current live holdings performance
 
 Note: The live and backtest curves won’t perfectly match. The backtest chart is resampled to yearly performance, while the live result is displayed at a shorter time horizon.
 
