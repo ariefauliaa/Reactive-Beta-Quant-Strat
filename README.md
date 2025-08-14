@@ -85,6 +85,22 @@ This ensures **heavier exposure to the highest reactive beta & most liquid names
 
 ---
 
+### 📈 Live Result
+
+Some of you might be wondering "Is this backtest performance even realistic? Could it be overfitting? Data leakage?" We had the same doubts.
+
+To challenge our own assumptions, we rebuilt the strategy **6 separate times from scratch, ran the backtests again, and then took it live.**
+
+The live results were remarkable: over 16 live data points, the strategy delivered +49.72% cumulative performance.
+
+![Live Result Preview](Live%20Result%20-%20Preview.png)
+
+Left chart → live overall performance, right chart → current live holdings performance
+
+Note: The live and backtest curves won’t perfectly match. The backtest chart is resampled to yearly performance, while the live result is displayed at a shorter time horizon.
+
+---
+
 ### 🔮 Stress Test - Monte Carlo Simulation
 
 ![Monte Carlo Preview](Monte%20Carlo%20-%20Preview.png)
