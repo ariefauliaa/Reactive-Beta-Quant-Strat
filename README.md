@@ -148,10 +148,10 @@ Then the room master offers: *"Want another round? 1 more door? 5? 50?"*
 
 ---
 
-### 🔍 Strategic Observations
+### 🔍 Observations
 
 - The **long-only reactive beta** works surprisingly well in a market where shorting isn't fully enabled.
-- Even though this is a one legged strategy (no hedging), it **consistently outperformed the index**.
+- Even though this is a one legged strategy, it **consistently outperformed the index**.
 
 ---
 
